@@ -1,37 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Главная | Учебный час</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | Учебный час</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header class="header">
-<a class="header__logo" href="index.html">Учебный час</a>
-<nav class="header__nav">
-<a class="header__link header__link--active" href="index.html">Главная</a>
-<a class="header__link" href="register.html">Регистрация</a>
-<a class="header__link" href="login.html">Вход</a>
-<a class="header__link" href="orders.html">Мои заявки</a>
-<a class="header__link" href="create.html">Новая заявка</a>
-<a class="header__link" href="admin.html">Администратор</a>
-</nav>
-</header>
-<main class="main">
-</main>
-<footer class="footer">
-<div class="footer__inner">
-<div class="footer__col">
-<p class="footer__name">Учебный час</p>
-<p class="footer__text">Курсы по программированию</p>
-</div>
-<div class="footer__col">
-<a class="footer__link" href="tel:+73830000000">+7(000)-000-00-00</a>
-<a class="footer__link" href="mailto:info@uchebny-chas.ru">info@uchebny-chas.ru</a>
-</div>
-<p class="footer__copy">© 2026 Учебный час</p>
-</div>
-</footer>
+    <header class="header">
+        <a class="header__logo" href="index.html">Учебный час</a>
+        <nav class="header__nav">
+            <a class="header__link header__link--active" href="index.html">Главная</a>
+            <a class="header__link" href="register.html">Регистрация</a>
+            <a class="header__link" href="login.html">Вход</a>
+            <a class="header__link" href="orders.html">Мои заявки</a>
+            <a class="header__link" href="create.html">Новая заявка</a>
+            <a class="header__link" href="admin.html">Администратор</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__line">Учебный час.</span>
+                    <span class="hero__line">Один час в день —</span>
+                    <span class="hero__line">и вы пишете код.</span>
+                </h1>
+                <p class="hero__lead">Онлайн-курсы по программированию для тех, кто начинает с нуля. Короткие занятия,
+                    понятные задания и живая проверка от преподавателей.</p>
+                <p class="hero__text">Оставьте заявку на курс за пару минут и следите за её статусом в личном кабинете.
+                </p>
+            </div>
+            <div class="hero__aside">
+                <img class="hero__image" src="img/hero-terminal.svg" alt="Окно терминала с командами Git">
+                <div class="hero__panel">
+                    <h2 class="hero__panel-title">Начните учиться сегодня</h2>
+                    <a class="button button--primary button--block" href="register.html">Зарегистрироваться</a>
+                    <a class="button button--outline button--block" href="login.html">Войти</a>
+                    <p class="hero__note">Регистрация занимает меньше трёх минут.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses" id="courses">
+            <h2 class="courses__title">Курсы по программированию</h2>
+            <p class="courses__lead">Выберите направление и оставьте заявку. Каждый курс состоит из коротких учебных
+                часов.</p>
+            <div class="courses__grid">
+
+                <article class="course reveal">
+                    <div class="course__media">
+                        <img class="course__image" src="img/course-python.svg" alt="Код на языке Python">
+                        <div class="course__label">
+                            <span class="course__meta">24 учебных часа</span>
+                            <h3 class="course__name">Python с нуля</h3>
+                        </div>
+                    </div>
+                    <p class="course__text">Переменные, циклы и функции. Пишете первые программы, даже если никогда не
+                        программировали.</p>
+                </article>
+
+                <article class="course reveal">
+                    <div class="course__media">
+                        <img class="course__image" src="img/course-web.svg" alt="Код HTML и CSS">
+                        <div class="course__label">
+                            <span class="course__meta">30 учебных часов</span>
+                            <h3 class="course__name">Вёрстка: HTML и CSS</h3>
+                        </div>
+                    </div>
+                    <p class="course__text">Собираете адаптивные страницы: теги, формы, flexbox и анимации. В конце у
+                        вас готовый сайт.</p>
+                </article>
+
+                <article class="course reveal">
+                    <div class="course__media">
+                        <img class="course__image" src="img/course-js.svg" alt="Код на языке JavaScript">
+                        <div class="course__label">
+                            <span class="course__meta">36 учебных часов</span>
+                            <h3 class="course__name">JavaScript для начинающих</h3>
+                        </div>
+                    </div>
+                    <p class="course__text">Оживляете страницы: реагируете на клики, проверяете формы и работаете с
+                        данными.</p>
+                </article>
+
+                <article class="course reveal">
+                    <div class="course__media">
+                        <img class="course__image" src="img/course-php.svg" alt="Код на языке PHP">
+                        <div class="course__label">
+                            <span class="course__meta">40 учебных часов</span>
+                            <h3 class="course__name">PHP и MySQL</h3>
+                        </div>
+                    </div>
+                    <p class="course__text">Делаете серверную часть сайта: регистрацию, базу данных и личный кабинет
+                        пользователя.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="how" id="how">
+            <div class="how__inner">
+                <div class="how__intro">
+                    <h2 class="how__title">Как это работает</h2>
+                    <p class="how__lead">Три шага от первого визита до заявки на курс.</p>
+                </div>
+                <ol class="how__steps">
+                    <li class="step reveal">
+                        <span class="step__number">1</span>
+                        <div class="step__body">
+                            <h3 class="step__title">Зарегистрируйтесь</h3>
+                            <p class="step__text">Придумайте логин и пароль. Личный кабинет откроется сразу.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__number">2</span>
+                        <div class="step__body">
+                            <h3 class="step__title">Оставьте заявку</h3>
+                            <p class="step__text">Выберите курс и расскажите, когда вам удобно заниматься.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__number">3</span>
+                        <div class="step__body">
+                            <h3 class="step__title">Следите за статусом</h3>
+                            <p class="step__text">В разделе «Мои заявки» видно, на каком этапе ваша заявка.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="stats reveal">
+                <div class="stats__item">
+                    <span class="stats__value stats__value--students" aria-label="1200 слушателей"></span>
+                    <span class="stats__label">Слушателей</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__value stats__value--courses" aria-label="24 курса"></span>
+                    <span class="stats__label">Курса</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__value stats__value--teachers" aria-label="15 преподавателей"></span>
+                    <span class="stats__label">Преподавателей</span>
+                </div>
+                <div class="stats__item">
+                    <span class="stats__value">4,9</span>
+                    <span class="stats__label">Средняя оценка</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta__inner reveal">
+                <h2 class="cta__title">Готовы начать первый час?</h2>
+                <a class="button button--primary" href="register.html">Зарегистрироваться</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <p class="footer__name">Учебный час</p>
+                <p class="footer__text">Курсы по программированию</p>
+            </div>
+            <div class="footer__col">
+                <a class="footer__link" href="tel:+73830000000">+7(000)-000-00-00</a>
+                <a class="footer__link" href="mailto:info@uchebny-chas.ru">info@uchebny-chas.ru</a>
+            </div>
+            <p class="footer__copy">© 2026 Учебный час</p>
+        </div>
+    </footer>
 </body>
+
 </html>
