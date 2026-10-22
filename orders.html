@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мои заявки | Учебный час</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a class="header__logo" href="index.html">Учебный час</a>
+<nav class="header__nav">
+<a class="header__link" href="index.html">Главная</a>
+<a class="header__link" href="register.html">Регистрация</a>
+<a class="header__link" href="login.html">Вход</a>
+<a class="header__link header__link--active" href="orders.html">Мои заявки</a>
+<a class="header__link" href="create.html">Новая заявка</a>
+<a class="header__link" href="admin.html">Администратор</a>
+</nav>
+</header>
+<main class="main">
+
+<section class="orders">
+<div class="orders__head">
+<h1 class="orders__title">Мои заявки</h1>
+<a class="button button--primary" href="create.html">Новая заявка</a>
+</div>
+<div class="orders__grid">
+<article class="order reveal">
+<div class="order__top">
+<h2 class="order__number">Заявка № 1001</h2>
+<span class="status status--new">Новая</span>
+</div>
+<dl class="order__fields">
+<div class="order__item"><dt class="order__term">Курс</dt><dd class="order__value">Python с нуля</dd></div>
+<div class="order__item"><dt class="order__term">Формат занятий</dt><dd class="order__value">Групповые занятия</dd></div>
+<div class="order__item"><dt class="order__term">Дата начала</dt><dd class="order__value">03.11.2026</dd></div>
+<div class="order__item"><dt class="order__term">Удобное время</dt><dd class="order__value">18:00</dd></div>
+<div class="order__item"><dt class="order__term">Часов в неделю</dt><dd class="order__value">3</dd></div>
+<div class="order__item"><dt class="order__term">Сертификат</dt><dd class="order__value">Нужен</dd></div>
+<div class="order__item order__item--wide"><dt class="order__term">Комментарий</dt><dd class="order__value">Начинаю с нуля, хочу заниматься по вечерам.</dd></div>
+</dl>
+</article>
+<article class="order reveal">
+<div class="order__top">
+<h2 class="order__number">Заявка № 1002</h2>
+<span class="status status--work">В работе</span>
+</div>
+<dl class="order__fields">
+<div class="order__item"><dt class="order__term">Курс</dt><dd class="order__value">Вёрстка: HTML и CSS</dd></div>
+<div class="order__item"><dt class="order__term">Формат занятий</dt><dd class="order__value">Индивидуальные занятия</dd></div>
+<div class="order__item"><dt class="order__term">Дата начала</dt><dd class="order__value">10.11.2026</dd></div>
+<div class="order__item"><dt class="order__term">Удобное время</dt><dd class="order__value">19:30</dd></div>
+<div class="order__item"><dt class="order__term">Часов в неделю</dt><dd class="order__value">4</dd></div>
+<div class="order__item"><dt class="order__term">Сертификат</dt><dd class="order__value">Не нужен</dd></div>
+<div class="order__item order__item--wide"><dt class="order__term">Комментарий</dt><dd class="order__value">Нужен упор на адаптивную вёрстку.</dd></div>
+</dl>
+</article>
+<article class="order reveal">
+<div class="order__top">
+<h2 class="order__number">Заявка № 1003</h2>
+<span class="status status--done">Выполнена</span>
+</div>
+<dl class="order__fields">
+<div class="order__item"><dt class="order__term">Курс</dt><dd class="order__value">JavaScript для начинающих</dd></div>
+<div class="order__item"><dt class="order__term">Формат занятий</dt><dd class="order__value">Групповые занятия</dd></div>
+<div class="order__item"><dt class="order__term">Дата начала</dt><dd class="order__value">15.09.2026</dd></div>
+<div class="order__item"><dt class="order__term">Удобное время</dt><dd class="order__value">17:00</dd></div>
+<div class="order__item"><dt class="order__term">Часов в неделю</dt><dd class="order__value">2</dd></div>
+<div class="order__item"><dt class="order__term">Сертификат</dt><dd class="order__value">Нужен</dd></div>
+<div class="order__item order__item--wide"><dt class="order__term">Комментарий</dt><dd class="order__value">Хочу разобраться с событиями и формами.</dd></div>
+</dl>
+<form class="form order__review" method="post" action="">
+<div class="form__group">
+<label class="form__label" for="review-1003">Ваш отзыв о курсе</label>
+<textarea class="form__textarea" id="review-1003" name="review" placeholder="Что понравилось, что можно улучшить" required></textarea>
+</div>
+<button class="button button--primary order__button" type="submit">Оставить отзыв</button>
+</form>
+</article>
+<article class="order reveal">
+<div class="order__top">
+<h2 class="order__number">Заявка № 1004</h2>
+<span class="status status--cancel">Отменена</span>
+</div>
+<p class="order__reason"><span class="order__reason-label">Причина отмены:</span> не подошло расписание занятий.</p>
+<dl class="order__fields">
+<div class="order__item"><dt class="order__term">Курс</dt><dd class="order__value">PHP и MySQL</dd></div>
+<div class="order__item"><dt class="order__term">Формат занятий</dt><dd class="order__value">Индивидуальные занятия</dd></div>
+<div class="order__item"><dt class="order__term">Дата начала</dt><dd class="order__value">20.10.2026</dd></div>
+<div class="order__item"><dt class="order__term">Удобное время</dt><dd class="order__value">20:00</dd></div>
+<div class="order__item"><dt class="order__term">Часов в неделю</dt><dd class="order__value">5</dd></div>
+<div class="order__item"><dt class="order__term">Сертификат</dt><dd class="order__value">Не нужен</dd></div>
+<div class="order__item order__item--wide"><dt class="order__term">Комментарий</dt><dd class="order__value">Нужно подготовиться к проекту по ПМ.08.</dd></div>
+</dl>
+</article>
+</div>
+</section>
+
+</main>
+<footer class="footer">
+<div class="footer__inner">
+<div class="footer__col">
+<p class="footer__name">Учебный час</p>
+<p class="footer__text">Курсы по программированию</p>
+</div>
+<div class="footer__col">
+<a class="footer__link" href="tel:+73830000000">+7(383)-000-00-00</a>
+<a class="footer__link" href="mailto:info@uchebny-chas.ru">info@uchebny-chas.ru</a>
+</div>
+<p class="footer__copy">© 2026 Учебный час</p>
+</div>
+</footer>
+</body>
+</html>
