@@ -919,3 +919,35 @@ a {
   line-height: 1.5;
   text-align: center;
 }
+
+/* Вход */
+.auth__alert {
+  padding: 10px 12px;
+  background: #fbd9d6;
+  border-radius: 4px;
+  animation: shake 0.5s 0.9s ease both;
+}
+
+@media (max-width: 900px) {
+  .auth {
+    grid-template-columns: 1fr;
+  }
+
+  .auth__intro {
+    padding: 48px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .auth__title {
+    font-size: 38px;
+  }
+
+  .auth__lead {
+    font-size: 18px;
+  }
+
+  .auth__aside {
+    padding: 32px 16px;
+  }
+}
