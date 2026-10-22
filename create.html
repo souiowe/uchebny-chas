@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка | Учебный час</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">Учебный час</a>
+        <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="register.html">Регистрация</a>
+            <a class="header__link" href="login.html">Вход</a>
+            <a class="header__link" href="orders.html">Мои заявки</a>
+            <a class="header__link header__link--active" href="create.html">Новая заявка</a>
+            <a class="header__link" href="admin.html">Администратор</a>
+        </nav>
+    </header>
+    <main class="main">
+
+        <section class="request">
+            <div class="request__intro">
+                <h1 class="request__title">
+                    <span class="request__line">Новая заявка.</span>
+                    <span class="request__line">Выберите курс и время.</span>
+                </h1>
+                <p class="request__lead">Расскажите, чему хотите научиться и когда вам удобно заниматься. Мы подберём
+                    группу или преподавателя.</p>
+                <p class="request__text">Статус заявки можно отслеживать в разделе «Мои заявки».</p>
+            </div>
+            <div class="request__aside">
+                <div class="request__panel">
+                    <h2 class="request__panel-title">Заявка на курс</h2>
+                    <form class="form form--request" method="post" action="">
+                        <div class="form__group form__group--tight form__group--rise">
+                            <label class="form__label form__label--tight" for="course">Курс</label>
+                            <select class="form__select" id="course" name="course" required>
+                                <option value="" selected disabled>Выберите курс</option>
+                                <option value="python">Python с нуля</option>
+                                <option value="web">Вёрстка: HTML и CSS</option>
+                                <option value="js">JavaScript для начинающих</option>
+                                <option value="php">PHP и MySQL</option>
+                            </select>
+                        </div>
+                        <fieldset class="form__group form__group--tight form__group--rise form__fieldset">
+                            <legend class="form__label form__label--tight form__label--legend">Формат занятий</legend>
+                            <div class="form__option">
+                                <input class="form__radio" type="radio" id="format-group" name="format" value="group"
+                                    required>
+                                <label class="form__option-label" for="format-group">Групповые занятия</label>
+                            </div>
+                            <div class="form__option">
+                                <input class="form__radio" type="radio" id="format-single" name="format" value="single">
+                                <label class="form__option-label" for="format-single">Индивидуальные занятия</label>
+                            </div>
+                        </fieldset>
+                        <div class="form__group form__group--tight form__group--rise">
+                            <label class="form__label form__label--tight" for="start-date">Дата начала</label>
+                            <input class="form__input" type="date" id="start-date" name="start_date" required>
+                        </div>
+                        <div class="form__group form__group--tight form__group--rise">
+                            <label class="form__label form__label--tight" for="start-time">Удобное время</label>
+                            <input class="form__input" type="time" id="start-time" name="start_time" placeholder="18:00"
+                                required>
+                        </div>
+                        <div class="form__group form__group--tight form__group--rise">
+                            <label class="form__label form__label--tight" for="hours">Часов в неделю</label>
+                            <input class="form__input" type="number" id="hours" name="hours" min="1" max="10"
+                                placeholder="3" required>
+                            <p class="form__hint">От 1 до 10 часов</p>
+                        </div>
+                        <div class="form__group form__group--tight form__group--rise">
+                            <label class="form__label form__label--tight" for="comment">Комментарий</label>
+                            <textarea class="form__textarea" id="comment" name="comment"
+                                placeholder="Например: начинаю с нуля, занимаюсь по вечерам"></textarea>
+                        </div>
+                        <div class="form__option">
+                            <input class="form__checkbox" type="checkbox" id="certificate" name="certificate" value="1">
+                            <label class="form__option-label" for="certificate">Нужен сертификат об окончании</label>
+                        </div>
+                        <button class="button button--primary button--block" type="submit">Отправить заявку</button>
+                    </form>
+                    <p class="request__back"><a class="link" href="orders.html">Назад к моим заявкам</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <p class="footer__name">Учебный час</p>
+                <p class="footer__text">Курсы по программированию</p>
+            </div>
+            <div class="footer__col">
+                <a class="footer__link" href="tel:+73830000000">+7(383)-000-00-00</a>
+                <a class="footer__link" href="mailto:info@uchebny-chas.ru">info@uchebny-chas.ru</a>
+            </div>
+            <p class="footer__copy">© 2026 Учебный час</p>
+        </div>
+    </footer>
+</body>
+
+</html>
